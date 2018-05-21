@@ -3,19 +3,19 @@ Python + Flask Practice Item
 
 【 项目使用系统是 windows 10 && python 版本是 3.6 && 编码器用的是 PyCharm 】
 
-1、先进入到 flask_learning 目录中接着使用如下的命令创建一个虚拟环境：
+**1、先进入到 flask_learning 目录中接着使用如下的命令创建一个虚拟环境：**
 
 ```angular2html
 python -m venv flask
 ```
 
-2、在 Windows 上安装 virtualenv 最简单地方式就是先安装 pip，安装方式在 这里 <https://pip.pypa.io/en/latest/installing.html>。一旦安装好了 pip 的话，下面的命令可以安装 virtualenv：
+**2、在 Windows 上安装 virtualenv 最简单地方式就是先安装 pip，安装方式在 这里 <https://pip.pypa.io/en/latest/installing.html>。一旦安装好了 pip 的话，下面的命令可以安装 virtualenv：**
 
 ```angular2html
 pip install virtualenv
 ```
 
-3、为了创建一个虚拟环境，请输入如下的命令行：
+**3、为了创建一个虚拟环境，请输入如下的命令行：**
 
 ```angular2html
 virtualenv flask
@@ -23,7 +23,7 @@ virtualenv flask
 
 上面的命令行在 flask 文件夹中创建一个完整的 Python 环境。
 
-4、安装 flask 以及扩展：
+**4、安装 flask 以及扩展：**
 
 ```angular2html
 flask\Scripts\pip install flask
@@ -41,7 +41,7 @@ flask\Scripts\pip install coverage
 ```
 这些命令行将会下载以及安装我们将会在我们的应用程序中使用的所有的包。
 
-5、在根目录下，开始为应用程序创建基本的文件结构：
+**5、在根目录下，开始为应用程序创建基本的文件结构：**
 ```angular2html
 mkdir app
 mkdir app/static
@@ -50,7 +50,7 @@ mkdir tmp
 ```
 应用程序包是放置于 app 文件夹中。子文件夹 static 是存放静态文件像图片，JS文件以及样式文件。子文件夹 templates 显然是存放模板文件。
 
-6、为app 包(文件 `app/__init__.py`)创建一个简单的初始化脚本，并导入视图模块:
+**6、为app 包(文件 `app/__init__.py`)创建一个简单的初始化脚本，并导入视图模块:**
 ```angular2html
 from flask import Flask     # 从 flask 这个框架中导入 Flask 这个类
 
@@ -63,7 +63,7 @@ app = Flask(__name__)
 from app import views
 ```
 
-7、视图是响应来自网页浏览器的请求的处理器。在 Flask 中，视图是编写成 Python 函数。每一个视图函数是映射到一个或多个请求的 URL。
+**7、视图是响应来自网页浏览器的请求的处理器。在 Flask 中，视图是编写成 Python 函数。每一个视图函数是映射到一个或多个请求的 URL。**
 
 编写一个视图函数(文件 app/views.py ):
 ```angular2html
@@ -93,7 +93,7 @@ def index():
     return render_template('index.html', title=title, user=user, posts=posts)
 ```
 
-8、创建配置文件（文件 config.py）并把它置于根目录:
+**8、创建配置文件（文件 config.py）并把它置于根目录:**
 ```angular2html
 # 开启调试模式
 DEBUG = True
@@ -104,7 +104,7 @@ SECRET_KEY = 'god-is-a-girl-biu-biu-biu'    # 当 CSRF 激活的时候才需要�
 ```
 
 
-9、创建一个脚本，启动我们的应用程序的开发 Web 服务器。
+**9、创建一个脚本，启动我们的应用程序的开发 Web 服务器。**
 
 创建一个文件(文件 run.py )并把它置于根目录:
 ```angular2html
@@ -119,13 +119,13 @@ if __name__ == '__main__':
     app.run()     # 启动一个应用服务器，来接受用户的请求（一直在监听是否有请求，死循环状态）
 ```
 
-10、在第7步有这么一句话
+**10、在第7步有这么一句话**
 `render_template('index.html', title=title, user=user, posts=posts)`
 意思是此刻需要创建一个模板，并向这个模板传递一些参数。
 
 比如，创建两个模板，（文件 app/templates/index.html） && （文件 app/templates/menu.html）：
 
-`menu.html 如下：`
+**`menu.html 如下：`**
 
 ```angular2html
 <!DOCTYPE html>
@@ -167,7 +167,7 @@ if __name__ == '__main__':
 </html>
 ```
 
-`index.html （实现继承 menu.html 模板）如下：`
+**`index.html （实现继承 menu.html 模板）如下：`**
 
 ```angular2html
 <!DOCTYPE html>
@@ -205,7 +205,7 @@ if __name__ == '__main__':
 </html>
 ```
 
-11、运行
+**11、运行**
 ```angular2html
 flask/Scripts/python run.py
 ```
@@ -213,4 +213,6 @@ flask/Scripts/python run.py
 
 点击 PyCharm 视窗上的运行按钮。
 
-
+----------------------------------------------------
+**未完，待续......**
+====
