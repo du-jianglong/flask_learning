@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% if title %}
+    <title>{{title}} Blog</title>
+    {% else %}
+    <title>Welcome To Zylan`s Blog</title>
+    {% endif %}
+</head>
+<body>
+
+{% extends 'menu.html' %}
+
+{% block content %}
+
+<h1>Hello，{{user.nickname}}</h1>
+
+<h3>以下是一个循环：</h3>
+
+{% for post in posts %}
+<p>{{post.author.nickname}} ：{{post.body}}</p>
+{% endfor %}
+
+
+<script type="text/javascript" src="../static/js/index.js"></script>
+
+{% endblock %}
+
+</body>
+</html>

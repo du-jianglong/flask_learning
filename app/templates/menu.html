@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>导航栏</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="../static/css/reset.css">
+    <link type="text/css" rel="stylesheet" href="../static/css/menu.css">
+    <script type="text/javascript" src="../static/js/jquery-2.1.1.min.js"></script>
+</head>
+<body>
+
+<header class="header_box">
+    <div class="fixed_width clearfix">
+        <div class="logo"><a href="javascript:;">Zylan`s Blog</a></div>
+        <div class="menu_box">
+            <dl class="menu clearfix">
+                <dd><a href="javascript:;" class="active">首页</a></dd>
+                <dd><a href="javascript:;">归档</a></dd>
+                <dd><a href="javascript:;">作品</a></dd>
+                <dd><a href="javascript:;">慢生活</a></dd>
+                <dd><a href="javascript:;">关于</a></dd>
+                <dd><a href="javascript:;">留言</a></dd>
+            </dl>
+        </div>
+    </div>
+</header>
+
+<!--占位符-->
+<div class="display_none_div"></div>
+
+{% block content %}{% endblock %}
+
+</body>
+</html>
