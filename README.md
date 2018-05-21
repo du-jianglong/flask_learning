@@ -3,6 +3,8 @@ Python + Flask Practice Item
 
 【 项目使用系统是 windows 10 && python 版本是 3.6 && 编码器用的是 PyCharm 】
 
+_**【 使用时请自行安装 flask 环境】**_
+
 **1、先进入到 flask_learning 目录中接着使用如下的命令创建一个虚拟环境：**
 
 ```angular2html
