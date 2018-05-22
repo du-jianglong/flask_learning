@@ -1,5 +1,5 @@
 from app import app
-from flask import render_template
+from flask import render_template, redirect, url_for
 
 # @app.route('/') 是一个装饰器
 # @开头，并在函数的上面，说明是装饰器
@@ -22,3 +22,8 @@ def index():
         }
     ]
     return render_template('index.html', title=title, user=user, posts=posts)
+
+
+@app.route('/formLogin')
+def formLogin():
+    return redirect(url_for('formLogin'))
