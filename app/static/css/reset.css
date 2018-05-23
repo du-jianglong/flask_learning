@@ -5,10 +5,10 @@ fieldset, img{border:0;}
 img{vertical-align:top; border:none;}
 address, caption, cite, code, dfn, em, strong, th, var{font-style:normal;}
 li{list-style-type:none;}
-html{width:100%;min-width:1200px;}
-body{width:100%;min-width:1200px;font:12px/1.5 "Microsoft YaHei","Helvetica Neue","Hiragino Sans GB",arial,helvetica,sans-serif;color:#333333;}
+html{width:100%;min-width:75rem;}
+body{width:100%;min-width:75rem;font:0.75rem/1.5 "Microsoft YaHei","Helvetica Neue","Hiragino Sans GB",arial,helvetica,sans-serif;color:#333333;}
 textarea{resize:none;}
-textarea,input{font-family:"Microsoft YaHei","Helvetica Neue","Hiragino Sans GB",arial,helvetica,sans-serif;font:12px/1.5;}
+textarea,input{font-family:"Microsoft YaHei","Helvetica Neue","Hiragino Sans GB",arial,helvetica,sans-serif;font:0.75rem/1.5;}
 input[type="reset"]::-moz-focus-inner,
 input[type="button"]::-moz-focus-inner,
 input[type="submit"]::-moz-focus-inner,
@@ -27,12 +27,12 @@ html{_background-attachment: fixed;}
 input, button{border: 0; outline: none; background: none; filter: chroma(color=#000000);}
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder{color: #bdbcbc;}
 i, em, b{font-style: normal;}
-::-webkit-input-placeholder, :-moz-placeholder, ::-moz-placeholder, :-ms-input-placeholder{color: #999; font-family: 微软雅黑, Microsoft YaHei, \5FAE\8F6F\96C5\9ED1; font-size: 12px;}
+::-webkit-input-placeholder, :-moz-placeholder, ::-moz-placeholder, :-ms-input-placeholder{color: #999; font-family: 微软雅黑, Microsoft YaHei, \5FAE\8F6F\96C5\9ED1; font-size: 0.75rem;}
 ::selection{background: #f20e0e; color: #fff;}
 ::-moz-selection{background: #f20e0e; color: #fff;}
 table{width: 100%; border-collapse: collapse; border-spacing: 0;}
 table td{word-break: break-all; word-wrap: break-word;}
-input{font-family: 微软雅黑, Microsoft YaHei, \5FAE\8F6F\96C5\9ED1; font-size: 12px;}
+input{font-family: 微软雅黑, Microsoft YaHei, \5FAE\8F6F\96C5\9ED1; font-size: 0.75rem;}
 a, a *{text-decoration: none; outline: none; star: expression(this.onFocus=this.blur());}
 .clearfix{clear: both; zoom: 1;}
 .clearfix:after{content: ''; display: block; clear: both;}
@@ -97,7 +97,7 @@ img{max-width: 100%; border: 0; outline: none; vertical-align: middle;}
 
 /*固定宽*/
 .fixed_width {
-    width: 1200px;
+    width: 75rem;
     height: auto;
     margin: auto;
 }

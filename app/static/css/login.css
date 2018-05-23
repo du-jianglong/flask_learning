@@ -1,0 +1,26 @@
+.login {
+  background: url("/static/images/login_bg.jpg") no-repeat;
+  background-size: cover; }
+  .login .form_box {
+    width: 26rem;
+    height: 26rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 0.5rem;
+    box-shadow: 0 0 5rem rgba(0, 0, 0, 0.3);
+    padding: 2rem; }
+    .login .form_box h2.title {
+      text-align: center; }
+    .login .form_box .input-group-prepend .input-group-text-picCode {
+      padding: 0; }
+      .login .form_box .input-group-prepend .input-group-text-picCode img.img_code {
+        width: 8rem;
+        height: 3.12rem;
+        background-color: #cccccc;
+        cursor: pointer; }
+    .login .form_box button.do_login {
+      height: 3rem;
+      width: 100%;
+      display: block;
+      margin: 1rem auto; }
+
+/*# sourceMappingURL=login.css.map */

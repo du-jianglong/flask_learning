@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>登录</title>
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/reset.css') }}">
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='fonts/css/open-iconic.css') }}">
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-2.1.1.min.js') }}"></script>
+</head>
+<body class="login">
+
+
+<div class="form_box position_zz">
+    <h2 class="title">登录</h2>
+    <form action="" method="post" name="login">
+        {{form.hidden_tag()}}
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <div class="input-group-text ">
+                    <label class="oi col-sm-1 col-form-label" data-glyph="person"></label>
+                </div>
+            </div>
+            {{form.openid(size=80)}}
+        </div>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <div class="input-group-text">
+                    <label class="oi col-sm-2 col-form-label" data-glyph="eye"></label>
+                </div>
+            </div>
+            <input type="password" class="form-control" placeholder="输入密码">
+        </div>
+
+        <div class="input-group mb-3">
+            <input type="text" class="form-control pic_code" placeholder="验证码">
+            <div class="input-group-prepend">
+                <div class="input-group-text input-group-text-picCode">
+                    <img src="" class="img_code" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="custom-control custom-checkbox my-1 mr-sm-2">
+            {{form.remember_me}} <label class="custom-control-label" for="customControlInline">记住我</label>
+        </div>
+
+        <button type="submit" class="btn btn-primary do_login">立即登录</button>
+    </form>
+</div>
+
+
+</body>
+</html>

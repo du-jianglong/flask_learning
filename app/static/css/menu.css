@@ -1,8 +1,8 @@
 .header_box {
-  padding: 10px 0;
-  -moz-box-shadow: 2px 2px 5px rgba(51, 51, 51, 0.1);
-  -webkit-box-shadow: 2px 2px rgba(51, 51, 51, 0.1);
-  box-shadow: 2px 2px 5px rgba(51, 51, 51, 0.1);
+  padding: 0.63rem 0;
+  -moz-box-shadow: 0.13rem 0.13rem 0.31rem rgba(51, 51, 51, 0.1);
+  -webkit-box-shadow: 0.13rem 0.13rem 0.31rem rgba(51, 51, 51, 0.1);
+  box-shadow: 0.13rem 0.13rem 0.31rem rgba(51, 51, 51, 0.1);
   position: fixed;
   top: 0;
   left: 0;
@@ -12,29 +12,29 @@
     float: left; }
     .header_box .logo a {
       display: inline-block;
-      font-size: 30px;
+      font-size: 1.88rem;
       font-weight: bold;
-      padding: 10px 0;
+      padding: 0.63rem 0;
       transition: all 0.3s linear; }
       .header_box .logo a:hover {
-        text-shadow: 0px 0px 5px rgba(51, 51, 51, 0.5); }
+        text-shadow: 0 0 0.31rem rgba(51, 51, 51, 0.5); }
   .header_box .menu_box {
     float: right; }
     .header_box .menu_box dd {
       float: left;
-      padding: 11px 20px;
-      height: 46px;
-      line-height: 46px; }
+      padding: 0.68rem 1.25rem;
+      height: 2.88rem;
+      line-height: 2.88rem; }
       .header_box .menu_box dd a {
-        font-size: 16px; }
+        font-size: 1rem; }
       .header_box .menu_box dd a.active {
         position: relative;
-        border-bottom: 2px solid #333333;
-        padding-bottom: 10px; }
+        border-bottom: 0.13rem solid #333333;
+        padding-bottom: 0.63rem; }
 
 .display_none_div {
   width: 100%;
-  height: 100px;
+  height: 6.25rem;
   background-color: transparent; }
 
 /*# sourceMappingURL=menu.css.map */
