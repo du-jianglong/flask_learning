@@ -24,6 +24,6 @@ def index():
     return render_template('index.html', title=title, user=user, posts=posts)
 
 
-@app.route('/formLogin')
-def formLogin():
-    return redirect(url_for('formLogin'))
+@app.route('/login')
+def login():
+    return render_template('formLogin.html')

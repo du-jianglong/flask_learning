@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     {% if title %}
-    <title>{{title}} Blog</title>
+        <title>{{ title }} Blog</title>
     {% else %}
-    <title>Welcome To Zylan`s Blog</title>
+        <title>Welcome To Zylan`s Blog</title>
     {% endif %}
 </head>
 <body>
@@ -14,16 +15,16 @@
 
 {% block content %}
 
-<h1>Hello，{{user.nickname}}</h1>
+    <h1>Hello，{{ user.nickname }}</h1>
 
-<h3>以下是一个循环：</h3>
+    <h3>以下是一个循环：</h3>
 
-{% for post in posts %}
-<p>{{post.author.nickname}} ：{{post.body}}</p>
-{% endfor %}
+    {% for post in posts %}
+        <p>{{ post.author.nickname }} ：{{ post.body }}</p>
+    {% endfor %}
 
 
-<script type="text/javascript" src="../static/js/index.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/index.js') }}"></script>
 
 {% endblock %}
 
