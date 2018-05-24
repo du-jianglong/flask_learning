@@ -8,6 +8,5 @@ SECRET_KEY = 'god-is-a-girl-biu-biu-biu'  # 当 CSRF 激活的时候才需要，
 # 定义 OpenID 提供者列表
 OPENID_PROVIDERS = [
     {'name': 'Google', 'url': 'https://www.google.com/accounts/o8/id'},
-    {'name': 'G'},
     {'name': 'MyOpenID', 'url': 'https://www.myopenid.com'}
 ]

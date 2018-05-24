@@ -1,3 +1,4 @@
+/* 设置 openid */
 function set_openid(openid, name) {
     var u = openid.search('<username>');
     if (u != -1) {
