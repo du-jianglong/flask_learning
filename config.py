@@ -1,5 +1,3 @@
-import os
-
 # 开启调试模式
 DEBUG = True
 
@@ -13,9 +11,7 @@ OPENID_PROVIDERS = [
     {'name': 'MyOpenID', 'url': 'https://www.myopenid.com'}
 ]
 
-
 # 数据库配置
-basedir = os.path.abspath(os.path.dirname(__name__))
-SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(basedir, 'app.db')
-SQLALCHEMY_MIGRATE_ERPO = os.path.join(basedir, 'my_db_dir')
-
+bSQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:@localhost:3306/blogDB?charset=utf8'
+SQLALCHEMY_TRACK_MODIFICATIONS = True
+SQLALCHEMY_COMMIT_TEARDOWN = True
