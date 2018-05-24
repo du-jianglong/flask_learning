@@ -1,42 +1,49 @@
 .login {
   background: url("/static/images/login_bg.jpg") no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  cursor: default; }
   .login .form_box {
     width: 26rem;
-    height: 28rem;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 0.5rem;
-    box-shadow: 0 0 5rem rgba(0, 0, 0, 0.3);
-    padding: 2rem; }
-    .login .form_box h2.title {
-      text-align: center; }
-    .login .form_box .input-group-prepend .input-group-text-picCode {
-      padding: 0; }
-      .login .form_box .input-group-prepend .input-group-text-picCode img.img_code {
-        width: 8rem;
-        height: 3.12rem;
-        background-color: #cccccc;
-        cursor: pointer; }
-    .login .form_box .invalid-feedback {
-      margin-top: 0; }
-    .login .form_box input {
-      border-color: #ced4da; }
-    .login .form_box button.do_login {
-      height: 3rem;
+    max-height: 32rem; }
+    .login .form_box .forms {
       width: 100%;
-      display: block;
-      margin: 1rem auto; }
-    .login .form_box a.iconfont {
-      font-size: 1.5rem;
-      width: 1.5rem;
-      height: 1.5rem;
-      border-radius: 50%;
-      background-color: white; }
-    .login .form_box a.icon-qq {
-      color: #00addf; }
-    .login .form_box a.icon-weixin {
-      color: #f49e56; }
-    .login .form_box a.icon-sina1 {
-      color: #4cbd63; }
+      height: auto;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 0.5rem;
+      box-shadow: 0 0 5rem rgba(0, 0, 0, 0.3);
+      padding: 1rem 2rem; }
+      .login .form_box .forms h2.title {
+        text-align: center; }
+      .login .form_box .forms .input-group-prepend .input-group-text-picCode {
+        padding: 0; }
+        .login .form_box .forms .input-group-prepend .input-group-text-picCode img.img_code {
+          width: 8rem;
+          height: 3.12rem;
+          background-color: #cccccc;
+          cursor: pointer; }
+      .login .form_box .forms .invalid-feedback {
+        margin-top: 0; }
+      .login .form_box .forms input {
+        border-color: #ced4da; }
+      .login .form_box .forms button.do_login {
+        height: 3rem;
+        width: 100%;
+        display: block;
+        margin: 1rem auto; }
+      .login .form_box .forms .third_party a.iconfont {
+        font-size: 1.5rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 50%;
+        text-decoration: none;
+        background-color: white;
+        position: relative;
+        top: 0.1rem; }
+      .login .form_box .forms .third_party a.icon-qq {
+        color: #00addf; }
+      .login .form_box .forms .third_party a.icon-weixin {
+        color: #4cbd63; }
+      .login .form_box .forms .third_party a.icon-sina1 {
+        color: #e72b33; }
 
 /*# sourceMappingURL=login.css.map */

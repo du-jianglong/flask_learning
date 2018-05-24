@@ -14,63 +14,73 @@
 
 
 <div class="form_box position_zz">
-    <h2 class="title">登录</h2>
-    <form action="" method="post" name="login">
-        {{ form.hidden_tag() }}
-        <div class="input-group mb-3">
-            <div class="input-group-prepend">
-                <div class="input-group-text ">
-                    <label class="iconfont icon-people col-sm-1 col-form-label"></label>
+    <div class="forms">
+        <h2 class="title">登录</h2>
+        <form action="" method="post" name="login">
+            {{ form.hidden_tag() }}
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <div class="input-group-text ">
+                        <label class="iconfont icon-people col-sm-1 col-form-label"></label>
+                    </div>
                 </div>
+                {{ form.openid(size=80) }}
+                {% for error in form.openid.errors %}
+                    <div class="invalid-feedback">
+                        {{ error }}
+                    </div>
+                {% endfor %}
             </div>
-            {{ form.openid(size=80) }}
-            {% for error in form.openid.errors %}
-                <div class="invalid-feedback">
-                    {{ error }}
-                </div>
-            {% endfor %}
-        </div>
 
-        <div class="input-group mb-3">
-            <div class="input-group-prepend">
-                <div class="input-group-text">
-                    <label class="iconfont icon-eye1 col-sm-2 col-form-label"></label>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">
+                        <label class="iconfont icon-eye1 col-sm-2 col-form-label"></label>
+                    </div>
                 </div>
+                {{ form.password() }}
+                {% for error in form.password.errors %}
+                    <div class="invalid-feedback">
+                        {{ error }}
+                    </div>
+                {% endfor %}
             </div>
-            {{ form.password() }}
-            {% for error in form.password.errors %}
-                <div class="invalid-feedback">
-                    {{ error }}
-                </div>
-            {% endfor %}
-        </div>
 
-        <div class="input-group mb-3">
-            {{ form.pic_code() }}
-            <div class="input-group-prepend">
-                <div class="input-group-text input-group-text-picCode">
-                    <img src="" class="img_code" alt="">
+            <div class="input-group mb-3">
+                {{ form.pic_code() }}
+                <div class="input-group-prepend">
+                    <div class="input-group-text input-group-text-picCode">
+                        <img src="" class="img_code" alt="">
+                    </div>
                 </div>
+                {% for error in form.pic_code.errors %}
+                    <div class="invalid-feedback">
+                        {{ error }}
+                    </div>
+                {% endfor %}
             </div>
-            {% for error in form.pic_code.errors %}
-                <div class="invalid-feedback">
-                    {{ error }}
-                </div>
-            {% endfor %}
-        </div>
 
-        <div class="custom-control custom-checkbox my-1 mr-sm-2">
-            {{ form.remember_me }} <label class="custom-control-label" for="customControlInline">记住我</label>
-        </div>
+            <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                {{ form.remember_me }} <label class="custom-control-label" for="customControlInline">记住我</label>
+            </div>
 
-        <button type="submit" class="btn btn-primary do_login">立即登录</button>
+            <button type="submit" class="btn btn-primary do_login">立即登录</button>
 
-        <a class="iconfont icon-qq waveBtn"></a>
-        <a class="iconfont icon-weixin waveBtn"></a>
-        <a class="iconfont icon-sina1 waveBtn"></a>
-    </form>
+            <div class="form-group third_party">
+                <label for="exampleInputEmail1">第三方登录：</label>
+                <a href="javascript:;" class="iconfont icon-qq waveBtn" title="QQ"></a>
+                <a href="javascript:;" class="iconfont icon-weixin waveBtn" title="WeChat"></a>
+                <a href="javascript:;" class="iconfont icon-sina1 waveBtn" title="Sina"></a>
+                {% for l in providers %}
+                    <a href="javascript:set_openid('{{ l.url }}', '{{ l.name }}');" class="iconfont icon-sina1 waveBtn" title="{{ l.name }}"></a>
+                {% endfor %}
+            </div>
+        </form>
+    </div>
 </div>
 
+
+<script type="text/javascript" src="{{ url_for('static', filename='js/login.js') }}"></script>
 
 </body>
 </html>
