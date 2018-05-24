@@ -6,7 +6,7 @@
 
   .form_box {
     width: 26rem;
-    height: 26rem;
+    height: 28rem;
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 0.5rem;
     box-shadow: 0 0 5rem rgba(0, 0, 0, 0.3);
@@ -28,11 +28,35 @@
       }
     }
 
+    .invalid-feedback {
+      margin-top: 0;
+    }
+
+    input {
+      border-color: #ced4da;
+    }
+
     button.do_login {
       height: 3rem;
       width: 100%;
       display: block;
       margin: 1rem auto;
+    }
+    a.iconfont {
+      font-size: 1.5rem;
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 50%;
+      background-color: white;
+    }
+    a.icon-qq {
+      color: #00addf;
+    }
+    a.icon-weixin {
+      color: #f49e56;
+    }
+    a.icon-sina1 {
+      color: #4cbd63;
     }
   }
 }

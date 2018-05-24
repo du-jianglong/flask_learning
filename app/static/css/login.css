@@ -3,7 +3,7 @@
   background-size: cover; }
   .login .form_box {
     width: 26rem;
-    height: 26rem;
+    height: 28rem;
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 0.5rem;
     box-shadow: 0 0 5rem rgba(0, 0, 0, 0.3);
@@ -17,10 +17,26 @@
         height: 3.12rem;
         background-color: #cccccc;
         cursor: pointer; }
+    .login .form_box .invalid-feedback {
+      margin-top: 0; }
+    .login .form_box input {
+      border-color: #ced4da; }
     .login .form_box button.do_login {
       height: 3rem;
       width: 100%;
       display: block;
       margin: 1rem auto; }
+    .login .form_box a.iconfont {
+      font-size: 1.5rem;
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 50%;
+      background-color: white; }
+    .login .form_box a.icon-qq {
+      color: #00addf; }
+    .login .form_box a.icon-weixin {
+      color: #f49e56; }
+    .login .form_box a.icon-sina1 {
+      color: #4cbd63; }
 
 /*# sourceMappingURL=login.css.map */

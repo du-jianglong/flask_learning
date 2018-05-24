@@ -1,6 +1,7 @@
 from app import app
-from flask import render_template, redirect, url_for
+from flask import render_template, redirect, url_for, flash
 from .forms import LoginForm
+
 
 # @app.route('/') 是一个装饰器
 # @开头，并在函数的上面，说明是装饰器
@@ -28,4 +29,8 @@ def index():
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     form = LoginForm()
-    return render_template('login.html', form=form)
+    if form.validate_on_submit():
+        flash('Login requested for openid="' + form.openid.data + '", remember_me=' + str(form.remember_me.data))
+        return redirect('/index')
+    print(app.config['OPENID_PROVIDERS'])
+    return render_template('login.html', form=form, providers=app.config['OPENID_PROVIDERS'])
