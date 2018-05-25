@@ -1,3 +1,4 @@
+
 # 开启调试模式
 DEBUG = True
 
@@ -12,6 +13,17 @@ OPENID_PROVIDERS = [
 ]
 
 # 数据库配置
-bSQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:@localhost:3306/blogDB?charset=utf8'
+USERNAME = 'root'
+PASSWORD = 'root'
+HOST = 'localhost'
+PORT = '3306'
+DATABASE = 'blogDB'
+
+DB_URI = 'mysql+pymysql://{}:{}@{}:{}/{}?charset=utf8'.format(USERNAME, PASSWORD, HOST, PORT, DATABASE)
+SQLALCHEMY_DATABASE_URI = DB_URI
 SQLALCHEMY_TRACK_MODIFICATIONS = True
+
+
+# bSQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:@localhost:3306/blogDB?charset=utf8'
+# SQLALCHEMY_TRACK_MODIFICATIONS = True
 SQLALCHEMY_COMMIT_TEARDOWN = True
