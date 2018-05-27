@@ -14,7 +14,7 @@ app.config.from_object(config)  # 执行 是否 进入 debug 模式
 db = SQLAlchemy(app)
 
 
-from app import views, models   # 导入视图模块
+from app import views, models  # 导入视图模块
 
 
 

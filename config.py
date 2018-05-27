@@ -12,6 +12,6 @@ OPENID_PROVIDERS = [
 ]
 
 # 数据库配置
-bSQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:@localhost:3306/blogDB?charset=utf8'
+SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:root@localhost:3306/MyBlogDB?charset=utf8'
 SQLALCHEMY_TRACK_MODIFICATIONS = True
 SQLALCHEMY_COMMIT_TEARDOWN = True
