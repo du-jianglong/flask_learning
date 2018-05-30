@@ -1,3 +1,6 @@
+import os
+
+
 # 开启调试模式
 DEBUG = True
 
@@ -12,6 +15,8 @@ OPENID_PROVIDERS = [
 ]
 
 # 数据库配置
-SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:root@localhost:3306/MyBlogDB?charset=utf8'
+basedir = os.path.abspath(os.path.dirname(__file__))
+SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:root@localhost:3306/MyBlogDB?charset=utf8'  # 数据库文件的路径
+SQLALCHEMY_MIGRATE_REPO = os.path.join(basedir, 'db_repository')    # 将数据文件存储在这里
 SQLALCHEMY_TRACK_MODIFICATIONS = True
 SQLALCHEMY_COMMIT_TEARDOWN = True
