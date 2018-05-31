@@ -1,3 +1,4 @@
+# 数据库迁移脚本
 import imp
 from migrate.versioning import api
 from app import db
