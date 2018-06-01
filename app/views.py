@@ -12,7 +12,7 @@ from .models import User
 # 127.0.0.1：5000/ -> 去请求 index() 这个函数，并返回结果给浏览器
 @app.route('/')
 @app.route('/index')
-@login_required
+# @login_required
 def index():
     title = 'Zylan`s'
     user = g.user
