@@ -1,5 +1,4 @@
 .header_box {
-  padding: 0.63rem 0;
   -moz-box-shadow: 0.13rem 0.13rem 0.31rem rgba(51, 51, 51, 0.1);
   -webkit-box-shadow: 0.13rem 0.13rem 0.31rem rgba(51, 51, 51, 0.1);
   box-shadow: 0.13rem 0.13rem 0.31rem rgba(51, 51, 51, 0.1);
@@ -8,6 +7,8 @@
   left: 0;
   right: 0;
   margin: auto; }
+  .header_box .fixed_width {
+    padding: 0.63rem 0; }
   .header_box .logo {
     float: left; }
     .header_box .logo a {

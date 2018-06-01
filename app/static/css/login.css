@@ -22,7 +22,8 @@
           background-color: #cccccc;
           cursor: pointer; }
       .login .form_box .forms .invalid-feedback {
-        margin-top: 0; }
+        margin-top: 0;
+        font-size: 50%; }
       .login .form_box .forms input {
         border-color: #ced4da; }
       .login .form_box .forms button.do_login {

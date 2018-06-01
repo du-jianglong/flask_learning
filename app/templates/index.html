@@ -15,12 +15,12 @@
 
 {% block content %}
 
-    <h1>Hello，{{ user.nickname }}</h1>
+    <h1>Hello，{{ user.username }}</h1>
 
     <h3>以下是一个循环：</h3>
 
     {% for post in posts %}
-        <p>{{ post.author.nickname }} ：{{ post.body }}</p>
+        <p>{{ post.author.username }} ：{{ post.body }}</p>
     {% endfor %}
 
 

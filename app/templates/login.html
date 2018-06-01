@@ -18,14 +18,15 @@
         <h2 class="title">登录</h2>
         <form action="" method="post" name="login">
             {{ form.hidden_tag() }}
+            {{ form.openid() }}
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
                     <div class="input-group-text ">
                         <label class="iconfont icon-people col-sm-1 col-form-label"></label>
                     </div>
                 </div>
-                {{ form.openid(size=80) }}
-                {% for error in form.openid.errors %}
+                {{ form.username(size=80) }}
+                {% for error in form.username.errors %}
                     <div class="invalid-feedback">
                         {{ error }}
                     </div>
